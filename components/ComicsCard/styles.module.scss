@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  overflow: hidden;
+  width: 282px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 428px;
+    object-fit: cover;
+    object-position: left;
+    display: block;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 48px);
+    opacity: 0;
+    transition: 500ms opacity linear;
+    z-index: -1;
+    max-height: calc(100% - 47px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar { width: 3px; }
+&::-webkit-scrollbar-track { background: #fff; }
+&::-webkit-scrollbar-thumb { background: #797272; border-radius: 20px;}
+
+    h3 {
+      font-size: 20px;
+      margin: 0 0 auto 0;
+    }
+    .summary {
+      color: grey;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .stories{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      margin: 10px 0;
+      padding: 0 0 0 26px;
+      
+    }
+    button{
+      padding: 8px;
+      text-transform: uppercase;
+      background: rgb(63, 63, 214);
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &:hover {
+    .content {
+      opacity: 1;
+      transition: 300ms opacity linear;
+      z-index: 1;
+    }
+  }
+}
