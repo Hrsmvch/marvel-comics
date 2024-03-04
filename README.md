@@ -4,7 +4,7 @@ Welcome to our Next.js project bootstrapped with [create-next-app](#https://gith
 
 ## Quick Links
 
-* [Github page](https://project-domain-staging.app/)
+* [Github page](#!)
 
 ## Introduction
 
@@ -37,12 +37,12 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Hrsmvch/marvel-comics.git
 
 2. Install dependencies:
 
    ```bash
-   cd project-directory
+   cd marvel-comics
    npm install
 
 3. Run the development server:
@@ -55,7 +55,7 @@ Open http://localhost:3000 to view the project in your browser.
 
 ## Deployment
 
-Deploys are automatically trigged on merges to main and during the pull request and review process. Merges to the main branch will be automatically deployed to the production environment.
+In progress ...
 
 ## Learn More
 
